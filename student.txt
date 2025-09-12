@@ -1,0 +1,5 @@
+Student name: Denys Matkovskyi
+Student number: 751998
+Student class: HAIT25FT1B
+GitHub Repository: https://github.com/Rainez/web-markup.git
+GitHub Pages URL: don't have yet
