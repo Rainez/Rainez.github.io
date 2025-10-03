@@ -7,6 +7,7 @@ body {
 
 nav {
   background-color: #e1e1e1;
+  opacity: 0.9;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -49,25 +50,88 @@ nav ul li a:hover {
 }
 
 header {
+  background-image: url(../img/background-page-for-Dutch-food-page.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 0 5em;
+  display: flex;
+  justify-content: center;
+  height: 660px;
+}
+
+#header-title {
+  font-size: 48px;
+  color: #003366;
+  display: flex;
+}
+
+#intro-section {
+  padding: 0 5em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  background-color: #e1e1e1;
+  color: #003366;
+  border: 8px #003366 double;
+  border-radius: 0%.5em;
+  margin-top: 1em;
+}
+
+#intro-section-article {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 30px;
-  height: 650px;
+}
+
+#intro-section-article-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro-section-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: auto;
+  width: 90%;
+  box-sizing: border-box;
+  border: 8px #003366 double;
+  border-radius: 0%.5em;
+  background-color: #e1e1e1;
+}
+
+h3 {
+  display: block;
+  font-size: 42px;
+  margin-top: 1em;
+}
+
+p {
+  margin-top: 1em;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: start;
 }
 
 main {
+  margin-top: 3em;
   padding: 0 5em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 5em;
+  column-gap: 4em;
   row-gap: 20px;
 }
 
 main section {
   padding: 20px;
   text-align: center;
-  background-color: #2e7d32;
+  background-color: #e1e1e1;
+  border: 8px #003366 double;
+  border-radius: 0%.5em;
 }
 
 footer {
@@ -89,35 +153,10 @@ footer {
   border: double #0b0b0b;
 }
 
-#header-text-section {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-}
-
-#header-title {
-  display: flex;
-  align-items: end;
-}
-
-#header-main-text {
-  display: inline-block;
-}
-
-#header-picture-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#header-picture {
-  object-fit: contain;
-}
-
 #separate-bar,
 #separate-bar2 {
   padding: 0 5em;
-  background-color: #2e7d32;
+  background-color: #b0c9b5;
   display: flex;
   box-sizing: border-box;
   width: 100%;
@@ -127,4 +166,6 @@ footer {
 .main-section-img {
   width: 345px;
   height: 215px;
+  border: 4px #003366 solid;
+  border-radius: 0.5em;
 }
