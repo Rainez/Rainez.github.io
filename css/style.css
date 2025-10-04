@@ -1,7 +1,7 @@
 body {
   background-color: #fcf8f4;
   margin: 0;
-  height: 1500px;
+  height: 100%;
   padding-top: 74.55px;
 }
 
@@ -135,12 +135,6 @@ main section {
   border-radius: 0%.5em;
 }
 
-@media (max-width: 1052px) {
-  main {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 footer {
   text-align: center;
   margin-top: 20px;
@@ -166,4 +160,10 @@ footer {
   object-fit: cover;
   border: 4px #003366 solid;
   border-radius: 0.5em;
+}
+
+@media (max-width: 1052px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
