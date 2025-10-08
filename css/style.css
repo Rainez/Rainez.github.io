@@ -49,7 +49,7 @@ nav ul li a:hover {
   color: #0b0b0b;
 }
 
-header {
+#Dutch-food-header {
   background-image: url(../img/background-page-for-Dutch-food-page.jpg);
   background-size: cover;
   background-position: center;
@@ -70,7 +70,7 @@ header {
   padding: 0 5em;
 }
 
-h2 {
+#main-section-for-Dutch-food-page h2 {
   text-align: center;
   font-size: 36px;
   background-color: #e1e1e1;
@@ -104,20 +104,20 @@ h2 {
   background-color: #e1e1e1;
 }
 
-h3 {
+#intro-section-article-text-section-h3 h3 {
   display: block;
   font-size: 42px;
   margin-top: 1em;
 }
 
-p {
+#main-section-for-Dutch-food-page p {
   margin-top: 1em;
   font-size: 18px;
   line-height: 1.6;
   text-align: start;
 }
 
-main {
+#main-section-for-Dutch-food-page {
   margin-top: 3em;
   padding: 0 5em;
   display: grid;
@@ -127,7 +127,7 @@ main {
   width: auto;
 }
 
-main section {
+#main-section-for-Dutch-food-page section {
   padding: 20px;
   text-align: center;
   background-color: #e1e1e1;
