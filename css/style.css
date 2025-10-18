@@ -401,6 +401,13 @@ footer > p {
   text-indent: 2em; /* wasn't really necessary for my website, so I only used it once */
 }
 
+/*  this code below is needed to fix an error in the validator html */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 /* my media requests */
 
 @media (max-width: 1140px) {
