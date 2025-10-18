@@ -29,7 +29,11 @@ li {
   padding: 0;
 }
 
-nav {
+.mobile-nav {
+  display: none;
+}
+
+.desktop-nav {
   background-color: #e1e1e1;
   opacity: 0.9;
   position: fixed;
@@ -43,17 +47,17 @@ nav {
   height: 74.55px;
 }
 
-nav > ul {
+.desktop-nav > ul {
   display: flex;
   justify-content: space-between;
 }
 
-nav > ul > li {
+.desktop-nav > ul > li {
   display: flex;
   list-style: none;
 }
 
-nav > ul > li > a {
+.desktop-nav > ul > li > a {
   display: flex;
   padding: 25px 15px;
   border: 3px double #e1e1e1;
@@ -64,7 +68,7 @@ nav > ul > li > a {
   transition: 0.15s;
 }
 
-nav > ul > li > a:hover {
+.desktop-nav > ul > li > a:hover {
   border: double #0b0b0b;
   color: #0b0b0b;
 }
@@ -248,7 +252,7 @@ footer {
 }
 
 @media (max-width: 1140px) {
-  nav {
+  .desktop-nav {
     padding: 0;
   }
 
@@ -314,4 +318,89 @@ label {
 
 ul {
   list-style: none;
+}
+
+@media (max-width: 980px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    position: fixed;
+    background-color: #e1e1e1;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    top: 0;
+    width: 100%;
+    height: 74.55px;
+    opacity: 0.9;
+    padding: 0 2em;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #f0f;
+    color: #fff;
+  }
+
+  .hamburger {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .hamburger > span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #f0f;
+  }
+
+  .hamburger > span:nth-child(1) {
+    top: 0;
+  }
+
+  .hamburger > span:nth-child(2) {
+    top: 9px;
+  }
+
+  .hamburger > span:nth-child(3) {
+    bottom: 0;
+  }
+
+  .menu > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu > ul > li {
+    padding: 10px;
+  }
+
+  .menu > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .menu > ul > li > a:hover {
+    text-decoration: underline;
+  }
+
+  #menu-toggle:checked ~ .menu {
+    left: 0;
+  }
 }
