@@ -91,6 +91,10 @@ figcaption {
   color: #0b0b0b;
 }
 
+em {
+  text-decoration: underline;
+}
+
 .link-btn {
   color: #0b0b0b;
   border: double #0b0b0b;
@@ -307,6 +311,7 @@ figcaption {
   text-align: start;
   font-size: 1.6rem;
   margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 40px;
 }
 
@@ -341,7 +346,7 @@ textarea:focus {
 }
 
 #submit-btn {
-  margin-top: 4em;
+  margin: 3em 0;
   background-color: #727272;
   color: white;
   border: none;
@@ -351,19 +356,20 @@ textarea:focus {
   cursor: pointer;
   width: 60%;
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 #submit-btn:hover {
   background-color: #0b0b0b;
 }
 
-#contact-form {
-  width: 100%;
-  display: flex;
+fieldset {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 80%;
 }
 
-form > ul {
-  padding-left: 20px;
+fieldset > ul {
   list-style: none;
   width: 100%;
 }

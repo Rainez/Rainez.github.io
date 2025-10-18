@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Denys Matkovskyi" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta
+      name="description"
+      content="Get in touch with Explore Dutch Culture in Haarlem. 
+      Contact us for questions about Dutch food, restaurants, attractions, or cultural events in the Netherlands."
+    />
+    <meta
+      name="keywords"
+      content="contact, Haarlem, Dutch culture, Netherlands, email, support,"
+    />
     <title></title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -87,60 +94,62 @@
         <h2 id="contact-form-title">Send us a message</h2>
 
         <form id="contact-form" action="#" method="post">
-          <ul>
-            <li>
-              <label for="name">Name&#58;</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Piter Parker"
-                required
-              />
-            </li>
-            <li>
-              <label for="email">Email&#58;</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="piterparker&#64;youremail.com"
-                required
-              />
-            </li>
-            <li>
-              <label for="phone">Phone Number&#58;</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="+31 6 7777777"
-                required
-              />
-            </li>
-            <li>
-              <label for="subject">Subject&#58;</label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Your Subject"
-                required
-              />
-            </li>
-            <li>
-              <label for="message">Message:</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                placeholder="Type your message here"
-                required
-              ></textarea>
-            </li>
-
-            <button type="submit" id="submit-btn">Send Message</button>
-          </ul>
+          <fieldset>
+            <legend>Contact Information</legend>
+            <ul>
+              <li>
+                <label for="name">Name&#58;</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Piter Parker"
+                  required
+                />
+              </li>
+              <li>
+                <label for="email">Email&#58;</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="piterparker&#64;youremail.com"
+                  required
+                />
+              </li>
+              <li>
+                <label for="phone">Phone Number&#58;</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+31 6 7777777"
+                  required
+                />
+              </li>
+              <li>
+                <label for="subject">Subject&#58;</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Your Subject"
+                  required
+                />
+              </li>
+              <li>
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Type your message here"
+                  required
+                ></textarea>
+              </li>
+              <input type="submit" value="Submit" id="submit-btn" />
+            </ul>
+          </fieldset>
         </form>
       </section>
       <aside>
