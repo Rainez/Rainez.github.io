@@ -73,6 +73,11 @@ nav > ul > li > a:hover {
   color: #0b0b0b;
 }
 
+.logo-company {
+  width: 74.55px;
+  height: 74.55px;
+}
+
 figure {
   display: flex;
   align-items: center;
@@ -111,6 +116,7 @@ figcaption {
   font-size: 2.5rem;
   color: #0b0b0b;
   display: flex;
+  text-align: center;
 }
 
 #intro {
@@ -119,8 +125,10 @@ figcaption {
 
 #intro-text {
   text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
   color: #0b0b0b;
   border: 2px #0b0b0b solid;
   border-radius: 7px;
@@ -146,13 +154,13 @@ figcaption {
   align-items: center;
   width: 90%;
   max-width: 90%;
-  min-width: 350px;
   height: clamp(200px, 40vw, 400px);
   border: 2px solid #dfe1df;
   border-radius: 0px 12px 0px 12px;
 }
 
 #intro-subtitle {
+  text-align: center;
   font-weight: bold;
   display: block;
   font-size: 2.2rem;
@@ -166,10 +174,12 @@ figcaption {
 }
 
 #intro-paragraph {
-  font-size: 1.5rem;
+  display: flex;
+  font-size: 1.4rem;
   margin-top: 1.2em;
-  text-align: justify;
   line-height: 1.6;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
 }
 
 .line {
@@ -191,7 +201,7 @@ figcaption {
 }
 
 #food-list-title {
-  text-indent: 2.5em;
+  text-align: center;
   font-size: 2rem;
   margin-top: 1em;
   margin-bottom: 0.5em;
@@ -257,48 +267,132 @@ figcaption {
   word-spacing: 2px;
   margin-bottom: 10px;
 }
+/* Contact page */
 
-footer {
+#contact-header {
+  height: 300px;
+  background-color: #eeeeee;
+  padding: 30px 40px;
   text-align: center;
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #f2f2f2;
+  align-content: center;
 }
 
-#logo-company {
-  display: inline-block;
-  vertical-align: top;
-  width: 74.55px;
-  height: 74.55px;
+#contact-header > h1 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+#contact-header > p {
+  line-height: 1.6;
+  color: #4f504f;
+  font-size: 1rem;
+}
+
+#main-contact-form {
+  margin-top: 4em;
+  height: 700px;
 }
 
 #contact-section {
-  margin: auto;
-  padding: 20px 5em;
-  background-color: pink;
-  width: 450px;
+  margin-left: 5%;
+  width: 50%;
+  height: 100%;
+  float: left;
+  background-color: #eeeeee;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+#contact-form-title {
   text-align: start;
   font-size: 1.6rem;
-  margin: 0;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
-label {
+li > label {
   display: block;
-  margin-bottom: 5px;
+  margin-top: 3%;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
-#contact-form {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr 1fr);
+input,
+textarea {
+  width: 80%;
+  height: auto;
 }
 
-ul {
+textarea {
+  font-size: 1rem;
+}
+
+input {
+  padding: 8px 4px;
+  text-align: start;
+  align-content: center;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgb(31, 97, 0);
+}
+
+#submit-btn {
+  margin-top: 4em;
+  background-color: #727272;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 60%;
+  transition: all 0.3s ease;
+}
+
+#submit-btn:hover {
+  background-color: #0b0b0b;
+}
+
+#contact-form {
+  width: 100%;
+  display: flex;
+}
+
+form > ul {
+  padding-left: 20px;
   list-style: none;
+  width: 100%;
+}
+
+aside {
+  margin-right: 5%;
+  display: flex;
+  float: right;
+  width: 40%;
+  height: 100%;
+  justify-content: end;
+}
+
+aside > img {
+  width: 80%;
+  float: right;
+  height: 700px;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  margin-bottom: 21.6px;
+}
+
+footer > p {
+  text-indent: 2em; /* wasn't really necessary for my website, so I only used it once */
 }
 
 /* my media requests */
@@ -426,6 +520,16 @@ ul {
     margin-top: 74.55px;
     right: 0;
   }
+
+  aside {
+    display: none;
+  }
+
+  #contact-section {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -436,5 +540,21 @@ ul {
   #food-list {
     padding: 0 2em;
     grid-template-columns: 1fr;
+  }
+
+  #intro-text {
+    font-size: 1.2rem;
+  }
+
+  #intro-subtitle {
+    font-size: 1.6rem;
+  }
+
+  #intro-paragraph {
+    font-size: 1rem;
+  }
+
+  #contact-header {
+    padding: 30px 10px;
   }
 }

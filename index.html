@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Denys Matkovskyi" />
     <meta name="description" content="" />
     <!-- not complete yet, I have to think of a description -->
@@ -10,29 +10,67 @@
     <!-- not complete yet, I have to think of keywords -->
     <title></title>
     <!-- not complete yet, I have to think of a title -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="icon" type="image/pgn" href="" />
-    <!-- not complete yet, I have to find a favicon -->
+    <link rel="icon" type="image/png" href="img/picture-logo-2.jpg" />
   </head>
-  <body>     
-      <nav class="desktop-nav">
+  <body>
+    <!-- nav -->
+    <section id="cookie-msg"><strong>We use cookies &#127850;</strong></section>
+    <nav class="desktop-nav">
       <figure>
-        <a href="page4.html"
-          ><img id="logo-company" src="img/picture-logo-2.jpg" alt="logo"
-        /></a>
+        <a href="index.html">
+          <img
+            class="logo-company"
+            src="img/picture-logo-2.jpg"
+            alt="Explore Dutch Culture logo"
+            title="Explore Dutch Culture &mdash; Discover Haarlem and the Netherlands"
+          />
+        </a>
         <figcaption>Explore Dutch Culture</figcaption>
       </figure>
-        <ul>
+      <ul>
+        <li><a class="link-btn" href="index.html">Home</a></li>
+        <li><a href="page1.html">Dutch Food</a></li>
+        <li><a href="page2.html">restaurants</a></li>
+        <li><a href="page3.html">Attractions</a></li>
+        <li><a href="page4.html">Event &amp; Communities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+      <a href="index.html">
+        <img
+          class="logo-company"
+          src="img/picture-logo-2.jpg"
+          alt="Explore Dutch Culture logo"
+          title="Explore Dutch Culture &mdash; Discover Haarlem and the Netherlands"
+        />
+      </a>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <section class="menu">
+        <ul class="mobile-menu">
           <li><a class="link-btn" href="index.html">Home</a></li>
           <li><a href="page1.html">Dutch Food</a></li>
-          <li><a href="page2.html">restaurants</a></li>
+          <li><a href="page2.html">Restaurants</a></li>
           <li><a href="page3.html">Attractions</a></li>
-          <li><a href="page4.html">Event & Communities</a></li>
+          <li><a href="page4.html">Event &amp; Communities</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
-    <header>
-    </header>
+      </section>
+    </nav>
+    <header></header>
     <main>
       <section>
         <article>
@@ -56,6 +94,9 @@
       </section>
     </main>
     <footer>
-      <p>&copy; 2025 Denys Matkovskyi</p>
+      <p>
+        <strong>&copy;Guide Tour For Haarlem</strong> &reg; All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
