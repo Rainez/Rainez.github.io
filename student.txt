@@ -3,3 +3,8 @@ Student number: 751998
 Student class: HAIT25FT1B
 GitHub Repository: https://github.com/Rainez/Rainez.github.io
 GitHub Pages URL: https://rainez.github.io/
+
+P.S.
+I used the Prettier extension in Visual Studio Code to automatically format my HTML and CSS code.
+This tool is not prohibited in the assignment instructions, and it helps keep the code consistent, clean, and readable.
+However, due to automatic formatting, some closing tags or indentation might look slightly different from manual formatting.

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@700&display=swap");
+
 body {
   background-color: #fcf8f4;
   margin: 0;
@@ -209,7 +211,7 @@ em {
   font-size: 2rem;
   margin-top: 1em;
   margin-bottom: 0.5em;
-  color: orange;
+  color: rgb(245, 171, 35);
 }
 
 #food-list {
@@ -271,6 +273,33 @@ em {
   word-spacing: 2px;
   margin-bottom: 10px;
 }
+
+/* Home page */
+
+table {
+  margin: 20px auto;
+  width: 90%;
+}
+
+th {
+  font-weight: bold;
+  border: 2px solid;
+}
+td:nth-child(2n + 0) {
+  background-color: #2ad085;
+  border: 2px solid;
+}
+
+td:nth-child(2n + 1) {
+  background-color: #73b1dd;
+  border: 2px solid;
+}
+
+td:first-child {
+  font-weight: bold;
+  background-color: #ccc;
+}
+
 /* Contact page */
 
 #contact-header {
@@ -348,7 +377,7 @@ textarea:focus {
 #submit-btn {
   margin: 3em 0;
   background-color: #727272;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 8px;
   padding: 12px;
@@ -569,5 +598,11 @@ footer > p {
 
   #contact-header {
     padding: 30px 10px;
+  }
+
+  td {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
