@@ -60,7 +60,9 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
+  width: 95px;
   display: flex;
+  justify-content: center;
   padding: 25px 15px;
   border: 3px double #e1e1e1;
   text-decoration: none;
@@ -208,14 +210,13 @@ em {
 
 #food-list-title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   color: rgb(245, 171, 35);
 }
 
 #food-list {
-  margin-top: 3em;
   padding: 0 5em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -467,7 +468,7 @@ footer {
 }
 
 footer > p {
-  text-indent: 2em; /* wasn't really necessary for my website, so I only used it once */
+  text-indent: 2em;
 }
 
 /*  this code below is needed to fix an error in the validator html */
@@ -480,10 +481,6 @@ footer > p {
 /* my media requests */
 
 @media (max-width: 1140px) {
-  nav {
-    padding: 0;
-  }
-
   #food-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -509,6 +506,28 @@ footer > p {
 }
 
 @media (max-width: 980px) {
+  aside {
+    display: none;
+  }
+
+  #contact-section {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+
+  #index-heading {
+    margin-top: 1em;
+    margin-right: 0;
+    font-size: 1.8rem;
+  }
+
+  #index-text {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
   nav {
     display: none;
   }
@@ -603,28 +622,6 @@ footer > p {
     right: 0;
   }
 
-  aside {
-    display: none;
-  }
-
-  #contact-section {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-  }
-
-  #index-heading {
-    margin-top: 1em;
-    margin-right: 0;
-    font-size: 1.8rem;
-  }
-
-  #index-text {
-    margin: 0;
-  }
-}
-
-@media (max-width: 768px) {
   #intro {
     padding: 0 2em;
   }
@@ -636,6 +633,9 @@ footer > p {
 
   #intro-text {
     font-size: 1.2rem;
+    border: none;
+    padding: 0;
+    margin: 5px 0;
   }
 
   #intro-subtitle {
@@ -671,5 +671,10 @@ footer > p {
 
   th {
     font-size: small;
+  }
+
+  #food-list-title {
+    font-size: 1.6rem;
+    margin: 0.7em 0;
   }
 }
