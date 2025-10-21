@@ -95,6 +95,14 @@ figcaption {
   color: #0b0b0b;
 }
 
+a:active {
+  background-color: #d1d1d1;
+  color: #0b0b0b;
+  transform: scale(0.95);
+  transition: all 0.15s ease;
+  border-radius: 6px;
+}
+
 em {
   text-decoration: underline;
 }
@@ -324,21 +332,14 @@ table {
 
 th {
   font-weight: bold;
-  border: 2px solid;
-}
-td:nth-child(2n + 0) {
-  background-color: #2ad085;
-  border: 2px solid;
 }
 
-td:nth-child(2n + 1) {
-  background-color: #73b1dd;
-  border: 2px solid;
+tr:nth-child(even) {
+  background-color: #cff;
 }
 
-td:first-child {
-  font-weight: bold;
-  background-color: #ccc;
+tr:nth-child(odd) {
+  background-color: #fff;
 }
 
 /* Contact page */
